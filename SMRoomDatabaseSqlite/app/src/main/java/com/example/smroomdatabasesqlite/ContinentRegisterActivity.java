@@ -18,7 +18,7 @@ public class ContinentRegisterActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_continent_register);
+        setContentView(R.layout.activity_registro_continente);
 
         text_field_continent_name = findViewById(R.id.text_field_continent_name);
         Button button_continent_save = findViewById(R.id.button_continent_save);

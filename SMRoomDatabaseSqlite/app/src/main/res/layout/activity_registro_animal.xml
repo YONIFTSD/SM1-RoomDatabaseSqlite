@@ -15,7 +15,9 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/register_title"
+            android:layout_marginTop="60dp"
+            android:textAlignment="center"
+            android:text="NUEVO"
             android:textAppearance="?attr/textAppearanceHeadline5"
             android:layout_marginBottom="15dp"
             />
@@ -23,7 +25,7 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/outline_text_animal_name"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="@string/animal_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:errorEnabled="true">
@@ -34,7 +36,7 @@
                 android:layout_height="wrap_content"
                 android:maxLines="1"
                 android:inputType="text"
-                android:hint="@string/animal_name"
+
                 />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -42,9 +44,9 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/outline_text_animal_description"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:hint="@string/animal_description"
             app:errorEnabled="true">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -54,7 +56,7 @@
                 android:maxLines="4"
                 android:lines="4"
                 android:inputType="textMultiLine"
-                android:hint="@string/animal_description"
+
                 />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -65,6 +67,7 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:hint="@string/animal_continent"
             app:errorEnabled="true">
 
             <AutoCompleteTextView
@@ -72,7 +75,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="none"
-                android:hint="@string/animal_continent"
+
             />
 
         </com.google.android.material.textfield.TextInputLayout>

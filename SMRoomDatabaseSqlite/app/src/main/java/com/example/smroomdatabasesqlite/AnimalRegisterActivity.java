@@ -36,14 +36,14 @@ public class AnimalRegisterActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_animal_register);
+        setContentView(R.layout.activity_registro_animal);
 
         getContinents();
 
         text_field_animal_name = findViewById(R.id.text_field_animal_name);
         text_field_animal_description = findViewById(R.id.text_field_animal_description);
 
-        adapter = new ArrayAdapter<>(getApplicationContext(), R.layout.dropdown_continents_item, CONTINENTS_ARRAY);
+        adapter = new ArrayAdapter<>(getApplicationContext(), R.layout.compomente_continente_row, CONTINENTS_ARRAY);
         editTextFilledExposedDropdown = findViewById(R.id.text_field_animal_continent);
         editTextFilledExposedDropdown.setAdapter(adapter);
 

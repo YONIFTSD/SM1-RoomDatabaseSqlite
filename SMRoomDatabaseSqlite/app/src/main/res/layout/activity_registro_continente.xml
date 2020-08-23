@@ -15,7 +15,8 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/register_continent_title"
+            android:layout_marginTop="60dp"
+            android:text="NUEVO"
             android:textAppearance="?attr/textAppearanceHeadline5"
             android:layout_marginBottom="15dp"
             />
@@ -23,8 +24,8 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/outline_text_continent_name"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
+            android:hint="@string/continent_name"
             android:layout_height="wrap_content"
             app:errorEnabled="true">
 
@@ -34,7 +35,7 @@
                 android:layout_height="wrap_content"
                 android:maxLines="1"
                 android:inputType="text"
-                android:hint="@string/continent_name"
+
                 />
 
         </com.google.android.material.textfield.TextInputLayout>

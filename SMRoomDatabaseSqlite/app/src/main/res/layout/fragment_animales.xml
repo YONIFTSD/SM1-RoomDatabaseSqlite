@@ -10,7 +10,7 @@
         android:id="@+id/recyclerview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:listitem="@layout/recyclerview_item" />
+        tools:listitem="@layout/componente_animales_row" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"
