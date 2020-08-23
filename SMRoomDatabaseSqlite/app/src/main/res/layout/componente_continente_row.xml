@@ -6,11 +6,15 @@
     android:layout_height="wrap_content">
 
 
+
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/card_continent"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:padding="10dp"
         android:layout_margin="5dp">
+
+
 
         <LinearLayout
             android:layout_width="match_parent"

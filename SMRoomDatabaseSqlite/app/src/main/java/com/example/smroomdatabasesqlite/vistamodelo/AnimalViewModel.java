@@ -1,4 +1,4 @@
-package com.example.smroomdatabasesqlite.viewmodel;
+package com.example.smroomdatabasesqlite.vistamodelo;
 
 import android.app.Application;
 
@@ -6,7 +6,7 @@ import androidx.annotation.NonNull;
 import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
 
-import com.example.smroomdatabasesqlite.repositories.AnimalRepository;
+import com.example.smroomdatabasesqlite.helper.AnimalRepository;
 import com.example.smroomdatabasesqlite.roomdatabase.Animal;
 
 import java.util.List;

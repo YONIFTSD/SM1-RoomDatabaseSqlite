@@ -1,4 +1,4 @@
-package com.example.smroomdatabasesqlite.repositories;
+package com.example.smroomdatabasesqlite.helper;
 
 import android.app.Application;
 import android.os.AsyncTask;

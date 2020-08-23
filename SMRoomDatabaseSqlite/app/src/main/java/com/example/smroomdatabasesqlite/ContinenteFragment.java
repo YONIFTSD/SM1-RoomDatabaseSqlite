@@ -17,14 +17,14 @@ import androidx.navigation.fragment.NavHostFragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.smroomdatabasesqlite.adaptador.ContinentListAdapter;
+import com.example.smroomdatabasesqlite.helper.ContinentListAdapter;
 import com.example.smroomdatabasesqlite.roomdatabase.Continent;
-import com.example.smroomdatabasesqlite.viewmodel.ContinentViewModel;
+import com.example.smroomdatabasesqlite.vistamodelo.ContinentViewModel;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.List;
 
-public class SecondFragment extends Fragment {
+public class ContinenteFragment extends Fragment {
     public static final int NEW_CONTINENT_RESULT = 1;
     private ContinentViewModel continentViewModel;
     @Override
@@ -42,7 +42,7 @@ public class SecondFragment extends Fragment {
         view.findViewById(R.id.button_second).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                NavHostFragment.findNavController(SecondFragment.this)
+                NavHostFragment.findNavController(ContinenteFragment.this)
                         .navigate(R.id.action_SecondFragment_to_FirstFragment);
             }
         });

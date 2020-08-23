@@ -4,13 +4,21 @@ xmlns:app="http://schemas.android.com/apk/res-auto"
 xmlns:tools="http://schemas.android.com/tools"
 android:layout_width="match_parent"
 android:layout_height="match_parent"
-tools:context=".FirstFragment">
+tools:context=".AnimalesFragment">
+    <TextView
+        android:layout_width="match_parent"
+        android:text="CONTINENTES"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:layout_margin="15dp"
+        android:layout_height="wrap_content"></TextView>
 
 <androidx.recyclerview.widget.RecyclerView
     android:id="@+id/recyclerview_continents"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    tools:listitem="@layout/recyclerview_continent_item" />
+    tools:listitem="@layout/componente_continente_row" />
 
 <com.google.android.material.floatingactionbutton.FloatingActionButton
     android:id="@+id/fab_continents"

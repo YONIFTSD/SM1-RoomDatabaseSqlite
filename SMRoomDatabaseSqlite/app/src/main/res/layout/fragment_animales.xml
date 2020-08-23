@@ -4,7 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FirstFragment">
+    tools:context=".AnimalesFragment">
+    <TextView
+        android:layout_width="match_parent"
+        android:text="CONTINENTES"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:layout_margin="15dp"
+        android:layout_height="wrap_content"></TextView>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerview"

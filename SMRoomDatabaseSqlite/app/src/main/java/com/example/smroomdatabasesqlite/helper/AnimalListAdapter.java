@@ -1,4 +1,4 @@
-package com.example.smroomdatabasesqlite.adaptador;
+package com.example.smroomdatabasesqlite.helper;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -63,7 +63,7 @@ public class AnimalListAdapter extends RecyclerView.Adapter<AnimalListAdapter.An
         }
 
         private void setData(Animal animal) {
-            String continent = "Continente: " + animal.getContinent();
+            String continent = animal.getContinent();
             animal_name.setText(animal.getName());
             animal_description.setText(animal.getDescription());
             animal_continent.setText(continent);

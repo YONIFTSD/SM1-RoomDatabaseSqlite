@@ -1,4 +1,4 @@
-package com.example.smroomdatabasesqlite.adaptador;
+package com.example.smroomdatabasesqlite.helper;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -31,7 +31,7 @@ public class ContinentListAdapter  extends RecyclerView.Adapter<ContinentListAda
     @NonNull
     @Override
     public ContinentListAdapter.ContinentViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = layoutInflater.inflate(R.layout.recyclerview_continent_item, parent, false);
+        View view = layoutInflater.inflate(R.layout.componente_continente_row, parent, false);
         return new ContinentViewHolder(view);
     }
 

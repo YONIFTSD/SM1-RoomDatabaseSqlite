@@ -16,7 +16,7 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
 import com.example.smroomdatabasesqlite.roomdatabase.Continent;
-import com.example.smroomdatabasesqlite.viewmodel.ContinentViewModel;
+import com.example.smroomdatabasesqlite.vistamodelo.ContinentViewModel;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -43,7 +43,7 @@ public class AnimalRegisterActivity extends AppCompatActivity {
         text_field_animal_name = findViewById(R.id.text_field_animal_name);
         text_field_animal_description = findViewById(R.id.text_field_animal_description);
 
-        adapter = new ArrayAdapter<>(getApplicationContext(), R.layout.compomente_continente_row, CONTINENTS_ARRAY);
+        adapter = new ArrayAdapter<>(getApplicationContext(), R.layout.items, CONTINENTS_ARRAY);
         editTextFilledExposedDropdown = findViewById(R.id.text_field_animal_continent);
         editTextFilledExposedDropdown.setAdapter(adapter);
 

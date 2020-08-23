@@ -17,14 +17,14 @@ import androidx.navigation.fragment.NavHostFragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.smroomdatabasesqlite.adaptador.AnimalListAdapter;
+import com.example.smroomdatabasesqlite.helper.AnimalListAdapter;
 import com.example.smroomdatabasesqlite.roomdatabase.Animal;
-import com.example.smroomdatabasesqlite.viewmodel.AnimalViewModel;
+import com.example.smroomdatabasesqlite.vistamodelo.AnimalViewModel;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.List;
 
-public class FirstFragment extends Fragment {
+public class AnimalesFragment extends Fragment {
     public static final int NEW_ANIMAL_RESULT = 1;
     private AnimalViewModel animalViewModel;
     @Override
@@ -42,7 +42,7 @@ public class FirstFragment extends Fragment {
         view.findViewById(R.id.button_first).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                NavHostFragment.findNavController(FirstFragment.this)
+                NavHostFragment.findNavController(AnimalesFragment.this)
                         .navigate(R.id.action_FirstFragment_to_SecondFragment);
             }
         });

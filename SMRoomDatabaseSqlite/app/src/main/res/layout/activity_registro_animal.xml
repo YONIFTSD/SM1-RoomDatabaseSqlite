@@ -22,11 +22,28 @@
             android:layout_marginBottom="15dp"
             />
 
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:boxBackgroundColor="#FFFFFF"
+            android:hint="Continente">
+
+            <AutoCompleteTextView
+                android:id="@+id/text_field_animal_continent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/outline_text_animal_name"
             android:hint="@string/animal_name"
             android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
             android:layout_height="wrap_content"
             app:errorEnabled="true">
 
@@ -62,23 +79,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/outline_text_animal_continent"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/animal_continent"
-            app:errorEnabled="true">
 
-            <AutoCompleteTextView
-                android:id="@+id/text_field_animal_continent"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="none"
-
-            />
-
-        </com.google.android.material.textfield.TextInputLayout>
 
         <Button
             android:id="@+id/button_animal_save"
