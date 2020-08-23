@@ -45,21 +45,22 @@ public abstract class AnimalRoomDatabase extends RoomDatabase {
 
         private List<Animal> getAnimals() {
             ArrayList<Animal> animals = new ArrayList<>();
-            animals.add(new Animal("El Elefante Africano", "Es el animal terrestre más grande del planeta. Los machos miden cerca de 3 metros de altura y pesan de 5 a 6 toneladas. Las hembras son un poco menores y alcanzan aproximadamente la mitad de peso. Tienen unos largos colmillos de marfil.", "Africa"));
-            animals.add(new Animal("Anaconda", "Americano de la misma familia de las boas y de costumbres acuáticas, que pertenece a las especies estranguladoras, mide entre 4,5 y 10 m de longitud, es de color pardo grisáceo con manchas negras redondeadas sobre el dorso y tiene cabeza de color oscuro con una banda anaranjada detrás de los ojos.", "América"));
-            animals.add(new Animal("Bos Mutus", "Es un bóvido de tamaño mediano y pelaje lanoso, nativo de las montañas de Asia Cental y el Himalaya, vive en las altiplanicies esteparias y fríos desiertos del Tíbet, Pamir y Karakórum, entre los 4000 y 6000 metros de altitud, donde se encuentra tanto en estado salvaje como doméstico.", "Asia"));
-            animals.add(new Animal("Bison bisonasus", "Es una especie de mamíferoartiodáctilo de la familia Bovidae. Es el mamífero de mayor tamaño deEuropa y uno de los más amenazados, por lo que es objeto de varios programas de reproducción en cautividad llevados a cabo en parques zoológicos.", "Europa"));
-            animals.add(new Animal("Diablo de Tasmania", "Es una especie de marsupial dasiuromorfo de la familia Dasyuridae. En la actualidad sólo se encuentra en estado silvestre en la isla de Tasmania, al sur de Australia. Es el marsupial carnívoro de mayor tamaño existente en la actualidad, tras la extinción del lobo marsupial.", "Oceanía"));
+            animals.add(new Animal("Ajolote", "En el axolotl, los aztecas vieron una manifestación del dios Xolotl, quien llevó a las almas al inframundo junto con el sol poniente. Los aztecas veneraban la carne del ajolote (como se le puede nombrar) y atrapaban a las criaturas de la enorme red de canales y lagos que sostenían sus comunidades en el centro de México. Hoy, solo queda una fracción de este sistema acuático, y está siendo contaminado por los fertilizantes, pesticidas, heces y basura de la Ciudad de México.", "América"));
+            animals.add(new Animal("Mandril", "El estilo lo es todo cuando vives en un grupo tan grande como el de un mandril. Con una tropa de 1.300 ejemplares una vez registrada en los bosques de Gabón, se cree que los mandriles forman los grupos sociales más grandes de primates no humanos. Con sus llamativas caras y ojos, han evolucionado para exhibir la coloración más espectacular de cualquier especie de mamífero, cuya intensidad indica su estado social y sexual.", "América"));
+            animals.add(new Animal("Osos polares", "Los osos polares dependen del hielo marino para atrapar su presa. Se abalanzan sobre las focas cuando emergen a través de sus respiraderos y las acechan mientras toman el sol al aire libre, pero el hielo se está derritiendo a medida que nuestro clima se calienta.", "Asia"));
+            animals.add(new Animal("Lémures", "Solo queda el 10% de los bosques históricos de Madagascar, los cuales sustentan a estos lémures en peligro crítico. Con una gran pasión por el néctar, se cree que los lémures son los polinizadores más grandes del mundo.", "Europa"));
             return animals;
         }
 
         private List<Continent> getContinents() {
             ArrayList<Continent> continents = new ArrayList<>();
-            continents.add(new Continent("Africa"));
-            continents.add(new Continent("América"));
-            continents.add(new Continent("Asia"));
-            continents.add(new Continent("Europa"));
             continents.add(new Continent("Oceanía"));
+            continents.add(new Continent("América"));
+            continents.add(new Continent("Africa"));
+            continents.add(new Continent("Europa"));
+            continents.add(new Continent("Asia"));
+
+
             return continents;
         }
 
